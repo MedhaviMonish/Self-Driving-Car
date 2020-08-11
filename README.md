@@ -5,8 +5,13 @@ This is an implementation of self driving car using Reinforcement learning algor
 There are 2 continuous actions and inputs are Car location , goal location , car speed and a raycast that checks for obstacle in 3 directions.
 
 This is a 1-step A2C.
-The car and track is created in Blender and the simulation is created in Unity. [Here's the link for Unity mlagents](https://github.com/Unity-Technologies/ml-agents)
-
+The car and track is created in Blender and the simulation is created in Unity. [Here's the link for Unity ml-agents](https://github.com/Unity-Technologies/ml-agents)
+You will find a CARAI.nn file this is a brain that drives the car, this was created using Unity ml-agent's implementation of PPO.
+The jupyter notebook file is my implementation of A2C.
+The implementation of RL algorithms provided by ml-agents can easily work with multiple agents,
+but there are issues with training our implementations with mutiple agents.
+That's why you should use the scene "Race track.unity" for training with inbuilt algorithms
+and "ForOwnImplementatiom.unity" for training with your implementation.
 
 ## Tools and libraries
 Unity Version: Unity 2019.3.0f6
